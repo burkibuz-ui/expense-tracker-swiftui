@@ -11,6 +11,10 @@
 		67ACE00D2F081E32001FDFC4 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACE00C2F081E32001FDFC4 /* ExpenseViewModel.swift */; };
 		67ACE00F2F081F90001FDFC4 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACE00E2F081F90001FDFC4 /* AddExpenseView.swift */; };
 		67ACE0112F082210001FDFC4 /* ExpenseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACE0102F082210001FDFC4 /* ExpenseRowView.swift */; };
+		67ACE01C2F097ADF001FDFC4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACE01B2F097ADF001FDFC4 /* LoginView.swift */; };
+		67ACE01E2F097B9D001FDFC4 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACE01D2F097B9D001FDFC4 /* RegisterView.swift */; };
+		67ACE0202F097CA7001FDFC4 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACE01F2F097CA7001FDFC4 /* SessionManager.swift */; };
+		67ACE0222F098017001FDFC4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACE0212F098017001FDFC4 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		67ACE00C2F081E32001FDFC4 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
 		67ACE00E2F081F90001FDFC4 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		67ACE0102F082210001FDFC4 /* ExpenseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRowView.swift; sourceTree = "<group>"; };
+		67ACE01B2F097ADF001FDFC4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		67ACE01D2F097B9D001FDFC4 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		67ACE01F2F097CA7001FDFC4 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		67ACE0212F098017001FDFC4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +51,7 @@
 		67ACDFF02F081BE1001FDFC4 = {
 			isa = PBXGroup;
 			children = (
+				67ACE01A2F097ABB001FDFC4 /* Auth */,
 				67ACE0092F081D0E001FDFC4 /* Views */,
 				67ACE0082F081CF1001FDFC4 /* ViewModels */,
 				67ACE0072F081C96001FDFC4 /* Models */,
@@ -80,8 +89,19 @@
 			children = (
 				67ACE00E2F081F90001FDFC4 /* AddExpenseView.swift */,
 				67ACE0102F082210001FDFC4 /* ExpenseRowView.swift */,
+				67ACE0212F098017001FDFC4 /* HomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		67ACE01A2F097ABB001FDFC4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				67ACE01B2F097ADF001FDFC4 /* LoginView.swift */,
+				67ACE01D2F097B9D001FDFC4 /* RegisterView.swift */,
+				67ACE01F2F097CA7001FDFC4 /* SessionManager.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				67ACE00B2F081DA0001FDFC4 /* Expense.swift in Sources */,
+				67ACE01C2F097ADF001FDFC4 /* LoginView.swift in Sources */,
+				67ACE0202F097CA7001FDFC4 /* SessionManager.swift in Sources */,
+				67ACE0222F098017001FDFC4 /* HomeView.swift in Sources */,
 				67ACE00D2F081E32001FDFC4 /* ExpenseViewModel.swift in Sources */,
+				67ACE01E2F097B9D001FDFC4 /* RegisterView.swift in Sources */,
 				67ACE00F2F081F90001FDFC4 /* AddExpenseView.swift in Sources */,
 				67ACE0112F082210001FDFC4 /* ExpenseRowView.swift in Sources */,
 			);

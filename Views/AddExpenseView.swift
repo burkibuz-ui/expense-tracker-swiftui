@@ -7,27 +7,19 @@ struct AddExpenseView: View {
 
     @State private var title = ""
     @State private var amount = ""
-    @State private var category = "Food"
-
-    let categories = ["Food", "Transport", "Shopping", "Other"]
+    @State private var category = ""
 
     var body: some View {
         NavigationStack {
             Form {
                 TextField("Title", text: $title)
-
                 TextField("Amount", text: $amount)
                     .keyboardType(.decimalPad)
-
-                Picker("Category", selection: $category) {
-                    ForEach(categories, id: \.self) {
-                        Text($0)
-                    }
-                }
+                TextField("Category", text: $category)
             }
             .navigationTitle("Add Expense")
             .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
                         if let value = Double(amount) {
                             viewModel.addExpense(
